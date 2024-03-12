@@ -10,7 +10,6 @@ ktor = "2.3.9"
 coroutines = "1.7.3"
 koinCoreVersion = "3.5.0"
 
-
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
@@ -25,7 +24,8 @@ sql-delight-android = { module = "app.cash.sqldelight:android-driver", version.r
 sql-delight-ios = { module = "app.cash.sqldelight:native-driver", version.ref = "sql-delight" }
 sql-delight-shared = { module = "app.cash.sqldelight:runtime", version.ref = "sql-delight" }
 
-# Coroutines
+# kotlinx
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 
@@ -47,6 +47,7 @@ koin-test = { module = "io.insert-koin:koin-test", version.ref = "koinCoreVersio
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinSerialization = { id = "plugin.serialization", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 sqlDelight = { id = "app.cash.sqldelight", version.ref = "sql-delight" }
